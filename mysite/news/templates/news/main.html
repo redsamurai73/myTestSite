@@ -5,11 +5,11 @@
     <title>News</title>
 </head>
 <body>
-    <div>
-        <h1>Главные новости:</h1>
-    </div>
+    <h1>Главные новости:</h1>
 
-
+    {% for news_item in news %}
+        <h2><a href="/">{{news_item.title}}</a></h2>
+    {% endfor %}
 
 </body>
 </html>
