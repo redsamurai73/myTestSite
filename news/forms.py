@@ -11,7 +11,7 @@ class FeedbackForm(forms.ModelForm):
 
     def clean_telephoneNumber(self):
         data = self.cleaned_data['telephoneNumber']
-        if (data < 10 ** 10) or (data >= 10 ** 11):
+        if (data < 10 ** 9) or (data >= 10 ** 10):
             raise ValidationError("Неверный номер телефона!")
         return data
 
