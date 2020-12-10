@@ -1,14 +1,14 @@
 {% extends "base_generic.html" %}
 
 {% block title %}
-News
+    FlexNews
 {% endblock %}
 
 {% block content %}
-<h1>Главные новости:</h1>
+    <h1>Главные новости:</h1>
 
 {% for news_item in news %}
-<h2><a href={{news_item.tr}}>{{news_item.title}}</a></h2>
+    <h2 class="lead"><a href={{news_item.tr}}>{{news_item.title}}</a></h2>
 {% endfor %}
 
 {% endblock %}

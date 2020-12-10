@@ -10,10 +10,14 @@
 
 <h1>{{news.title}}</h1>
 
-<h2>{{news.published_date}}</h2>
+<h4 class="lead">{{news.published_date}}</h4>
 
-{{news.text}}</br>
+<div class="lead">
+     {{news.text}}
+    </br>
+</div>
+</br>
 
-</br> {{news.author}}
+<h5>{{news.author}}</h5>
 
 {% endblock %}
