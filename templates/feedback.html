@@ -22,7 +22,7 @@
             <div class="col-md-4 mb-3">
                 <label for="lastName">Фамилия</label>
                 {% if feedback.name.value is None %}
-                <input name="{{feedback.surname.html_name}}" type="text" class="form-control" id="lastName" placeholder="" value="{{ feedback.surname.value }}" required>
+                <input name="{{feedback.surname.html_name}}" type="text" class="form-control" id="lastName" placeholder="" value="" required>
                 {% else %}
                 <input name="{{feedback.surname.html_name}}" type="text" class="form-control" id="lastName" placeholder="" value="{{ feedback.surname.value }}" required>
                 {% endif %}
